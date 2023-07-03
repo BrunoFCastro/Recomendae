@@ -34,18 +34,18 @@ services:
     networks:
       - backend-postgres-network
 
-  # web-frontend:
-  #   build:
-  #     context: /frontend
-  #     no_cache: true
-  #   environment:
-  #     - NODE_ENV=${ENV}
-  #   ports:
-  #     - "80:80"
-  #   depends_on:
-  #     - backend
-  #   networks:
-  #     - backend-frontend-network
+  web-frontend:
+    build:
+      context: /frontend
+      no_cache: true
+    environment:
+      - NODE_ENV=${ENV}
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - backend-frontend-network
 
 networks:
   postgres-pgadmin-network:
