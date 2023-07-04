@@ -5,10 +5,6 @@ function Cadastro(){
     <form>
       <button id="create-account-close-button" class="close-button" type="button">x</button>
       <h2>Criar Conta</h2>
-      <select>
-        <option value="leitor">Leitor</option>
-        <option value="editora">Editora</option>
-      </select>
       <input type="text" placeholder="Nome"/>
       <input type="email" placeholder="Email"/>
       <input type="password" placeholder="Senha"/>

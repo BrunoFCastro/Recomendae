@@ -10,7 +10,8 @@ function Login(){
             <input type="password" placeholder="Senha" />
             <button type="submit">Entrar</button>
         </form>
-    </div>)
+    </div>
+    )
 }
 
 export default Login
